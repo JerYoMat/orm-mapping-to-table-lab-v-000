@@ -23,9 +23,10 @@ class Student
   end 
   
   def self.drop_table 
-    <<-SQL 
+    sql =<<-SQL 
       Delete TABLE  students 
         SQL
+        sql 
   end 
   
 
