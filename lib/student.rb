@@ -26,7 +26,7 @@ class Student
     sql =<<-SQL 
       Delete TABLE  students 
         SQL
-        sql 
+    DB[:conn].execute(sql) 
   end 
   
 
