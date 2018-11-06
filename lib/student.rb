@@ -3,6 +3,8 @@ class Student
   attr_reader :id 
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]  
+  
+  
   def self.create_table
         sql =  <<-SQL 
       CREATE TABLE IF NOT EXISTS students (
@@ -13,6 +15,7 @@ class Student
         SQL
     DB[:conn].execute(sql) 
   end 
-  binding.pry 
+  
+  
 
 end
