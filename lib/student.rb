@@ -40,7 +40,8 @@ class Student
   end 
   
   def self.create(hash_attributes)
-    binding.pry 
+    Student.new(hash_attributes[:name], hash_attributes[:grade])
+    
   end 
   
 
