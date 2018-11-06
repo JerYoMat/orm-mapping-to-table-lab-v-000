@@ -24,7 +24,7 @@ class Student
   
   def self.drop_table 
     sql =<<-SQL 
-      Delete TABLE  students 
+      Delete students 
         SQL
     DB[:conn].execute(sql) 
   end 
